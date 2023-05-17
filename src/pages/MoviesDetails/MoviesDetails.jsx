@@ -1,15 +1,14 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams, Outlet, useNavigate } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 import {
   IMG_URL,
   SearchMoviesDetails,
 } from '../../components/SearchAPI/SearchAPI';
-import defoltImg from '../../img/default.jpg';
+import defoltImg from 'components/img/default.jpg';
 import { Loader } from 'components/Loader/Loader';
 import MoviesDetailsSCSS from './MoviesDetails.module.scss';
 
-import { Outlet } from 'react-router-dom';
 const MoviesDetails = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState([]);

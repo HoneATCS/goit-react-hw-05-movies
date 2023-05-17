@@ -2,7 +2,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { IMG_URL } from 'components/SearchAPI/SearchAPI';
 import MovieListSCSS from './MovieList.module.scss';
-import defoltImg from '../../img/default.jpg';
+import defoltImg from 'components/img/default.jpg';
 
 export const MovieItem = ({ movie }) => {
   const location = useLocation();

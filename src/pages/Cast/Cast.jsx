@@ -4,7 +4,7 @@ import {
   IMG_URL,
   SearchMoviesActor,
 } from '../../components/SearchAPI/SearchAPI';
-import defoltImg from '../../img/cat.png';
+import defoltImg from 'components/img/cat.png';
 import CastSCSS from './Cast.module.scss';
 
 const Cast = () => {
